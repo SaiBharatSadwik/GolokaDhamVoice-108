@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISKCON Website</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -13,11 +14,12 @@
     <div class="logo">
         <img src="iskcon-logo.png" alt="ISKCON Logo">
     </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#camps">Camps</a></li>
-        <li><a href="https://forms.gle/oUogD3sCsobSy1yU7">Attendance</a></li>
+        <li><a href="https://forms.gle/arps8Qx6e55gZHh58" target="_blank">Attendance</a></li>
         <li><a href="#seva">Seva</a></li>
         <li><a href="#quote">Daily Quote - Gita</a></li>
         <li><a href="#login">Login | Signup</a></li>
@@ -33,44 +35,37 @@
 <!-- About Section -->
 <section id="about">
     <h2>About ISKCON</h2>
-    <p>ISKCON is dedicated to spreading the teachings of Lord Krishna and the principles of devotion.</p>
+    <p>ISKCON is dedicated to spreading the teachings of Lord Krishna and the principles of Bhakti Yoga.</p>
 </section>
 
 <!-- Camps Section -->
 <section id="camps">
     <h2>Camps</h2>
-    <p>Join our spiritual camps to experience inner peace and enlightenment.</p>
+    <p>Join our spiritual retreats and explore the path of devotion.</p>
 </section>
-
-<!-- Attendance Form Section -->
-<!-----<section id="attendance">
-    <h2>Attendance</h2>
-    <p>Mark your attendance and keep track of your spiritual progress.</p>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Submit</button>
-    </form>  --->
 
 <!-- Seva Section -->
 <section id="seva">
     <h2>Seva</h2>
-    <p>Serve with devotion and experience spiritual bliss.</p>
+    <p>Engage in devotional service and experience spiritual growth.</p>
 </section>
 
 <!-- Daily Quote Section -->
 <section id="quote">
-    <h2>Daily Quote - Gita</h2>
-    <p>"You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions." - Bhagavad Gita 2.47</p>
+    <h2>Daily Quote - Bhagavad Gita</h2>
+    <p>" whatever you offer or give away, and whatever austerities you perform—do that as an offering to Me." (Bhagavad Gita 9.27)</p>
+</section>
+
+<!-- Login Section -->
+<section id="login">
+    <h2>Login / Signup</h2>
+    <p>Join our community and grow spiritually.</p>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p> Dedicated to &copy;HG RadheShyam Prabhu</p>
+    <p>© Dedicated to HG RadheShyam Prabhu</p>
 </footer>
 
-<!----<script src="script.js"></script>--->
 </body>
 </html>
