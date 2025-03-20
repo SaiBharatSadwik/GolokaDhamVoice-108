@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+make the code <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISKCON Website</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -14,12 +13,11 @@
     <div class="logo">
         <img src="iskcon-logo.png" alt="ISKCON Logo">
     </div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#camps">Camps</a></li>
-        <li><a href="https://forms.gle/arps8Qx6e55gZHh58" target="_blank">Attendance</a></li>
+        <li><a href="#attendance">Attendance</a></li>
         <li><a href="#seva">Seva</a></li>
         <li><a href="#quote">Daily Quote - Gita</a></li>
         <li><a href="#login">Login | Signup</a></li>
@@ -27,81 +25,71 @@
 </nav>
 
 <!-- Home Section -->
-<section id="home" class="section">
+<section id="home">
     <h1>Welcome to ISKCON Website</h1>
     <p>Explore the teachings of Srila Prabhupada and the path of devotion.</p>
-    <div class="slider-container">
-        <div class="slider">
-            <img src="home1.jpg" alt="Home 1" />
-            <img src="home2.jpg" alt="Home 2" />
-            <img src="home3.jpg" alt="Home 3" />
-        </div>
-    </div>
 </section>
 
 <!-- About Section -->
-<section id="about" class="section">
+<section id="about">
     <h2>About ISKCON</h2>
     <p>ISKCON is dedicated to spreading the teachings of Lord Krishna and the principles of Bhakti Yoga.</p>
-    <div class="slider-container">
-        <div class="slider">
-            <img src="about1.jpg" alt="About 1" />
-            <img src="about2.jpg" alt="About 2" />
-            <img src="about3.jpg" alt="About 3" />
-        </div>
-    </div>
 </section>
 
 <!-- Camps Section -->
-<section id="camps" class="section">
+<section id="camps">
     <h2>Camps</h2>
     <p>Join our spiritual retreats and explore the path of devotion.</p>
-    <div class="slider-container">
-        <div class="slider">
-            <img src="camp1.jpg" alt="Camp 1" />
-            <img src="camp2.jpg" alt="Camp 2" />
-            <img src="camp3.jpg" alt="Camp 3" />
-        </div>
-    </div>
+</section>
+
+<!-- Attendance Section -->
+<section id="attendance">
+    <h2>Attendance Form</h2>
+    <form action="#" method="post" class="attendance-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="rounds">Rounds Completed:</label>
+        <input type="number" id="rounds" name="rounds" min="0" required>
+
+        <label for="service-love">Service Done with Love?</label>
+        <select id="service-love" name="service-love" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="morning-attendance">Morning Attendance Completed?</label>
+        <select id="morning-attendance" name="morning-attendance" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="reason">If not, what is the reason?</label>
+        <textarea id="reason" name="reason"></textarea>
+
+        <label for="comments">Any Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
 </section>
 
 <!-- Seva Section -->
-<section id="seva" class="section">
+<section id="seva">
     <h2>Seva</h2>
     <p>Engage in devotional service and experience spiritual growth.</p>
-    <div class="slider-container">
-        <div class="slider">
-            <img src="seva1.jpg" alt="Seva 1" />
-            <img src="seva2.jpg" alt="Seva 2" />
-            <img src="seva3.jpg" alt="Seva 3" />
-        </div>
-    </div>
 </section>
 
 <!-- Daily Quote Section -->
-<section id="quote" class="section">
+<section id="quote">
     <h2>Daily Quote - Bhagavad Gita</h2>
     <p>"Whatever you do, whatever you eat, whatever you offer or give away, and whatever austerities you perform—do that as an offering to Me." (Bhagavad Gita 9.27)</p>
-    <div class="slider-container">
-        <div class="slider">
-            <img src="quote1.jpg" alt="Quote 1" />
-            <img src="quote2.jpg" alt="Quote 2" />
-            <img src="quote3.jpg" alt="Quote 3" />
-        </div>
-    </div>
 </section>
 
 <!-- Login Section -->
-<section id="login" class="section">
+<section id="login">
     <h2>Login / Signup</h2>
     <p>Join our community and grow spiritually.</p>
-    <div class="slider-container">
-        <div class="slider">
-            <img src="login1.jpg" alt="Login 1" />
-            <img src="login2.jpg" alt="Login 2" />
-            <img src="login3.jpg" alt="Login 3" />
-        </div>
-    </div>
 </section>
 
 <!-- Footer -->
@@ -110,4 +98,4 @@
 </footer>
 
 </body>
-</html>
+</html>  
