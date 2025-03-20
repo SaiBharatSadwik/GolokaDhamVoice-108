@@ -23,6 +23,11 @@ body {
     display: flex;
     gap: 20px;
 }
+img{
+    width: 100%;          /* Stretch to fill the width of the container */
+    height: 300px;         /* Fixed height */
+    object-fit: cover;
+}
 
 .nav-links a {
     color: white;
