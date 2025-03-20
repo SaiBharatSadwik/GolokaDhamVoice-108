@@ -1,120 +1,87 @@
-/* General Styles */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
 }
 
-/* Navbar Styles */
+/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #333;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
-.navbar .logo img {
+.logo img {
     height: 50px;
 }
 
-/* Hamburger Icon */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
 .hamburger {
     display: none;
-    font-size: 28px;
+    font-size: 24px;
     color: white;
     cursor: pointer;
 }
 
-/* Navigation Links */
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 12px;
-    display: block;
-    transition: background 0.3s ease;
-}
-
-.nav-links a:hover {
-    background-color: #555;
-}
-
-/* Section Styling */
-section {
-    padding: 40px 20px;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsive Styling for Smaller Screens */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
     .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
         background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        z-index: 10;
     }
-
-    .nav-links li {
-        text-align: center;
-        margin: 0;
-    }
-
-    .nav-links a {
-        padding: 12px;
-        font-size: 18px;
-    }
-
-    .nav-links.active {
+    
+    .nav-links.show {
         display: flex;
+    }
+    
+    .hamburger {
+        display: block;
     }
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 22px;
-    }
+/* Slider Styling */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
 
-    h2 {
-        font-size: 20px;
-    }
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
 
-    p {
-        font-size: 16px;
-    }
+.slides img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
