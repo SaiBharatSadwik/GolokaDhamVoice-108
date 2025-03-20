@@ -3,109 +3,68 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IYS Website</title>
-    <link rel="icon" href="iskcon-logo.png" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f9f9f9;
-        }
-        .navbar {
-            width: 200px;
-            position: fixed;
-            height: 100%;
-            background-color: #333;
-            padding-top: 20px;
-            color: white;
-            overflow-y: auto;
-        }
-        .navbar img {
-            display: block;
-            margin: 0 auto;
-            width: 100px;
-            height: auto;
-            border-radius: 10px;
-        }
-        .navbar a {
-            padding: 15px;
-            display: block;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        .navbar a:hover {
-            background-color: #555;
-        }
-        .content {
-            margin-left: 220px;
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>ISKCON Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <!-- Navbar -->
-<div class="navbar">
-    <img src="iskcon-logo.png" alt="ISKCON Logo">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#camps">Camps</a>
-    <a href="https://forms.gle/arps8Qx6e55gZHh58" target="_blank">Attendance</a> <!-- Linked to Google Form -->
-    <a href="#seva">Seva</a>
-    <a href="#quote">Daily Quote - Gita</a>
-    <a href="#login">Login/Signup</a>
-</div>
+<nav class="navbar">
+    <div class="logo">
+        <img src="iskcon-logo.png" alt="ISKCON Logo">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#camps">Camps</a></li>
+        <li><a href="https://forms.gle/arps8Qx6e55gZHh58" target="_blank">Attendance</a></li>
+        <li><a href="#seva">Seva</a></li>
+        <li><a href="#quote">Daily Quote - Gita</a></li>
+        <li><a href="#login">Login | Signup</a></li>
+    </ul>
+</nav>
 
-<!-- Main Content -->
-<div class="content">
-    <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to IYS Website!</p>
-    </section>
+<!-- Home Section -->
+<section id="home">
+    <h1>Welcome to ISKCON Website</h1>
+    <p>Explore the teachings of Srila Prabhupada and the path of devotion.</p>
+</section>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>This is about the ISKCON Youth Services (IYS).</p>
-    </section>
+<!-- About Section -->
+<section id="about">
+    <h2>About ISKCON</h2>
+    <p>ISKCON is dedicated to spreading the teachings of Lord Krishna and the principles of Bhakti Yoga.</p>
+</section>
 
-    <section id="camps">
-        <h2>Camps</h2>
-        <p>Details about upcoming and past camps.</p>
-    </section>
+<!-- Camps Section -->
+<section id="camps">
+    <h2>Camps</h2>
+    <p>Join our spiritual retreats and explore the path of devotion.</p>
+</section>
 
-    <section id="seva">
-        <h2>Seva</h2>
-        <p>Join our Seva activities and contribute with love!</p>
-    </section>
+<!-- Seva Section -->
+<section id="seva">
+    <h2>Seva</h2>
+    <p>Engage in devotional service and experience spiritual growth.</p>
+</section>
 
-    <section id="quote">
-        <h2>Daily Quote - Gita</h2>
-        <p>"Perform your prescribed duty, for doing so is better than not working." - Bhagavad Gita 3.8</p>
-    </section>
+<!-- Daily Quote Section -->
+<section id="quote">
+    <h2>Daily Quote - Bhagavad Gita</h2>
+    <p>"Whatever you do, whatever you eat, whatever you offer or give away, and whatever austerities you perform—do that as an offering to Me." (Bhagavad Gita 9.27)</p>
+</section>
 
-    <section id="login">
-        <h2>Login/Signup</h2>
-        <p>Please login or signup to access exclusive content.</p>
-    </section>
-</div>
+<!-- Login Section -->
+<section id="login">
+    <h2>Login / Signup</h2>
+    <p>Join our community and grow spiritually.</p>
+</section>
 
 <!-- Footer -->
 <footer>
-    @Dedicated to HG RadheShyam Prabhu
+    <p>© Dedicated to HG RadheShyam Prabhu</p>
 </footer>
 
 </body>
